@@ -1,0 +1,319 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap");
+
+:root {
+  --logo-color: #555555;
+  --darker-grey: #777777;
+  --ligher-grey: #c4c4c4;
+  --light-grey: #cccccc;
+  --background-grey: #e9e9e9;
+  --green-color: #7cc576;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: 0;
+}
+body {
+  font-family: Montserrat;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1020px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.section {
+  margin-block: 30px;
+  @media screen and(min-width: 769px) {
+    margin-block: 60px;
+  }
+
+  @media screen and(min-width: 1025px) {
+    margin-block: 100px;
+  }
+}
+
+h1 {
+  font-size: 50px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 10px;
+  @media screen and(min-width: 481px) {
+    margin-bottom: 20px;
+  }
+  @media screen and(min-width: 1025px) {
+    font-size: 60px;
+    margin-bottom: 30px;
+  }
+}
+
+h2 {
+  font-size: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #000;
+  text-align: center;
+  @media screen and(min-width: 481px) {
+    margin-bottom: 10px;
+  }
+  @media screen and(min-width: 1025px) {
+    font-size: 40px;
+    margin-bottom: 20px;
+  }
+}
+
+h3 {
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #000;
+  text-align: center;
+  @media screen and(min-width: 481px) {
+    margin-bottom: 10px;
+  }
+  @media screen and(min-width: 1025px) {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+}
+
+.subtitle {
+  font-family: Roboto Slab, sans-serif;
+  font-size: 14px;
+  color: var(--darker-grey);
+  text-align: center;
+  margin-bottom: 20px;
+  padding: 0 10px;
+  @media screen and(min-width: 481px) {
+    font-size: 16px;
+    margin-bottom: 30px;
+  }
+  @media screen and(min-width: 1025px) {
+    font-size: 20px;
+    margin-bottom: 40px;
+  }
+}
+
+.description {
+  font-family: Roboto Slab, sans-serif;
+  font-size: 14px;
+  color: var(--darker-grey);
+  text-align: center;
+}
+
+/////buttons, links///////
+.rounded_button {
+  text-decoration: none;
+  text-transform: uppercase;
+  background-color: var(--green-color);
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+  text-shadow: 0 1px 1px #000;
+  padding: 16px 32px;
+  border-radius: 30px;
+}
+
+//////nav//////
+
+.nav_container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0 10px;
+  margin-block: 10px;
+  @media screen and(min-width: 769px) {
+    margin-block: 30px;
+  }
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--logo-color);
+}
+
+.nav_list {
+  list-style: none;
+  display: none;
+
+  @media screen and(min-width: 769px) {
+    width: 45%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+.nav_list a {
+  align-items: center;
+  font-size: 14px;
+  font-weight: 400;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: var(--darker-grey);
+  transition: color 0.5s;
+}
+
+.nav_list a:hover,
+.nav_list a:target {
+  color: #000000;
+}
+
+.nav_button {
+  background-color: transparent;
+  border: 0;
+  .nav_icon {
+    font-size: 34px;
+  }
+  @media screen and(min-width: 769px) {
+    display: none;
+  }
+}
+
+////////section_solutions////////////////////////////////
+
+.section_solutions {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(../img/Background.png);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.solutions_container {
+  justify-content: center;
+  height: 100vh;
+}
+
+.solutions_subtitle {
+  color: var(--light-grey);
+}
+
+////////section_services////////////////////////////////
+
+.services_col:not(:last-of-type) {
+  margin-bottom: 40px;
+  @media screen and(min-width: 769px) {
+    margin-bottom: 0;
+  }
+}
+
+.services_box {
+  display: flex;
+  flex-direction: column;
+  @media screen and(min-width: 769px) {
+    flex-direction: row;
+  }
+}
+.services_col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-inline: 10px;
+  max-width: 300px;
+  img {
+    margin-bottom: 16px;
+    @media screen and(min-width: 769px) {
+      margin-bottom: 32px;
+    }
+  }
+}
+
+////////section_relax////////////////////////////////
+
+.relax_container {
+  max-width: none;
+  display: flex;
+  flex-direction: row;
+}
+
+.relax_col1 {
+  background-color: var(--background-grey);
+  background-image: url(../img/gear.png);
+  background-repeat: no-repeat;
+  background-position: right center;
+  @media screen and(min-width: 769px) {
+    width: 30%;
+  }
+}
+.relax_col2 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(../img/Background-Relax.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px 10px;
+
+  @media screen and(min-width: 481px) {
+  }
+
+  @media screen and(min-width: 769px) {
+    width: 70%;
+    align-items: flex-start;
+    padding: 60px 40px;
+  }
+
+  @media screen and(min-width: 1025px) {
+    padding: 90px 90px 90px 90px;
+  }
+
+  @media screen and(min-width: 1280px ) {
+    padding: 90px 270px 90px 90px;
+  }
+}
+
+.relax_h2 {
+  color: #fff;
+  @media screen and(min-width: 769px) {
+    text-align: left;
+  }
+}
+
+.relax_h2_span {
+  color: var(--green-color);
+}
+
+.relax_subtitle {
+  @media screen and(min-width: 769px) {
+    text-align: left;
+    padding: 0;
+  }
+}
+
+.relax_list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 40px;
+
+  li {
+    padding: 4px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @media screen and(min-width: 769px) {
+      flex-direction: row;
+    }
+  }
+}
+
+.li_subtitles {
+  margin: 0;
+  font-size: 16px;
+}
