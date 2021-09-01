@@ -55,11 +55,13 @@ body {
 }
 
 h1 {
+  font-family: Montserrat, sans-serif;
   font-size: 50px;
   font-weight: 700;
   text-transform: uppercase;
   color: #fff;
   text-align: center;
+  letter-spacing: -4px;
   margin-bottom: 10px;
 }
 
@@ -77,6 +79,7 @@ h1 {
 }
 
 h2 {
+  font-family: Montserrat, sans-serif;
   font-size: 30px;
   font-weight: 700;
   text-transform: uppercase;
@@ -98,6 +101,7 @@ h2 {
 }
 
 h3 {
+  font-family: Montserrat, sans-serif;
   font-size: 16px;
   font-weight: 700;
   text-transform: uppercase;
@@ -252,13 +256,14 @@ h3 {
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
+  margin-top: 0;
 }
 
 .solutions_container {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  height: 100vh;
+  padding: 100px 0;
 }
 
 .solutions_subtitle {
