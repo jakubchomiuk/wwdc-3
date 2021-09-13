@@ -175,6 +175,14 @@ h3 {
   text-shadow: 0 1px 1px #000;
   padding: 20px 32px;
   border-radius: 30px;
+  border: 3px solid transparent;
+  background-clip: padding-box;
+}
+
+.rounded_button:focus,
+.rounded_button:hover {
+  -webkit-box-shadow: 0 0 0 3px var(--green-color);
+          box-shadow: 0 0 0 3px var(--green-color);
 }
 
 .nav_container {
@@ -239,13 +247,43 @@ h3 {
   text-decoration: none;
   text-transform: uppercase;
   color: var(--darker-grey);
-  -webkit-transition: color 0.5s;
-  transition: color 0.5s;
 }
 
-.nav_list a:hover,
-.nav_list a:target {
-  color: #000000;
+.nav_list a {
+  position: relative;
+}
+
+.nav_list a::before {
+  position: absolute;
+  content: '';
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: var(--green-color);
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transform-origin: right;
+          transform-origin: right;
+  -webkit-transition: -webkit-transform 0.2s ease-in;
+  transition: -webkit-transform 0.2s ease-in;
+  transition: transform 0.2s ease-in;
+  transition: transform 0.2s ease-in, -webkit-transform 0.2s ease-in;
+}
+
+.nav_list a:hover::before,
+.nav_list a:focus::before {
+  -webkit-transform-origin: left;
+          transform-origin: left;
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+}
+
+.nav_list a:active::before {
+  -webkit-transform-origin: left;
+          transform-origin: left;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
 }
 
 .nav_button {
