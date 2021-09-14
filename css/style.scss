@@ -165,9 +165,11 @@ h3 {
   flex-direction: row;
   justify-content: space-between;
   padding: 10px;
+  margin: 0 auto;
   transition: padding 0.5s ease-in;
   @media screen and(min-width: 769px) {
    padding:30px 10px;
+   max-width:960px;
   }
 
 }
