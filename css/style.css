@@ -908,7 +908,7 @@ h3 {
 
 .section_contact_us {
   background-color: var(--green-color);
-  padding: 68px 0;
+  padding: 68px 10px;
 }
 
 .title_contact_us {
