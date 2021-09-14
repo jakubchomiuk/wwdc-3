@@ -1,6 +1,7 @@
-<!DOCKTYPE html>
+<!DOCTYPE html>
 <html lang="en">
    <head>
+      <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
       <meta charset="UTF-8" />
       <link rel="stylesheet" type="text/css" href="css/reset.css" />
       <link rel="stylesheet" type="text/css" href="css/style.css" />
@@ -10,30 +11,38 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <title>THREEHOUSE</title>
    </head>
-</html>
+
 <body>
    <header>
       <div class="nav" id="nav">
-         <div class="container nav_container">
+         <div class="nav_container" id="nav_container">
             <div class="logo">
                <img src="./img/leaf.png" alt="leaf" />
                <h4 class="logo_text">THREEHOUSE</h4>
             </div>
             <div class="button_wrapper">
                <button class="nav_button">
-               <i class="nav_button material-icons nav_icon">menu</i>
+               <i class="material-icons nav_icon">menu</i>
                </button>
             </div>
             <ul class="nav_list">
-               <li><a href="#">home</a></li>
+               <li><a href="#home">home</a></li>
                <li><a href="#">about</a></li>
                <li><a href="#">blog</a></li>
                <li><a href="#">portfolio</a></li>
                <li><a href="#">contact</a></li>
             </ul>
+
          </div>
+         <ul class="nav_list_mobile">
+            <li><a href="#home">home</a></li>
+            <li><a href="#">about</a></li>
+            <li><a href="#">blog</a></li>
+            <li><a href="#">portfolio</a></li>
+            <li><a href="#">contact</a></li>
+         </ul>
       </div>
-      <div class="section section_solutions" id="solutions">
+      <div class="section section_solutions" id="home">
          <div class="container solutions_container">
             <h1 class="solutions_heading_box">Creative Digital </br>Solutions</h1>
             <p class="subtitle solutions_subtitle">
@@ -112,7 +121,7 @@
                   <li>
                      <img src="./img/Checkmark.png" alt="checkmark" class="checkmark" />
                      <span class="subtitle li_subtitles"
-                        >initial Setup & Customizations</span
+                        >Initial Setup & Customizations</span
                         >
                   </li>
                   <li>
@@ -238,7 +247,7 @@
             </div>
          </div>
       </div>
-      <div class="section section_clients" id="clients">
+      <div class="section_clients" id="clients">
          <div class="container culture_container">
             <h2 class="project_h2">
                our awesome clients
@@ -272,13 +281,13 @@
             </div>
          </div>
       </div>
-      <div class="section section_contact_us" id="contact_us">
+      <div class="section_contact_us" id="contact_us">
          <h2 class="title_contact_us">ready to talk about your next project?</h2>
          <div class="button_wrapper">
             <a href="#" class="btn_contact_us">contact us</a>
          </div>
       </div>
-      <div class="section section logos" id="logos">
+      <div class="section_logos" id="logos">
          <div class="container logos_container">
             <div class="logos_item">
             <img class="logo_img" src="./img/Envato_Logo.png" alt="Envato_Logo">
@@ -290,7 +299,7 @@
             </div>
          </div>
          </div>
-      <div class="section section_news" id="news">
+      <div class="section_news" id="news">
          <div class="container news_container">
             <div class="news_col">
                <h3 class="title-news">Contact Us</h3>
@@ -349,7 +358,7 @@
               </div>
                <div class="news_item">
                <div class="icon-wrapper">
-                  <i class="fas fa-play size_news size_news"></i>
+                  <i class="fas fa-play size_news"></i>
                </div>
                <p class="posts_txt">Learn Web Design In 30 Days!</p>
               </div>
@@ -358,7 +367,7 @@
                <h3 class="title-news">Latest Tweets</h3>
                <div class="news_item">
                <div class="icon-wrapper">
-               <i class="fab fa-twitter"></i>
+               <i class="fab fa-twitter size_news"></i>
             </div>
             <div>
                <p class="twitter_post">
@@ -375,7 +384,7 @@
                </div>
                <div class="news_item">
                <div class="icon-wrapper">
-               <i class="fab fa-twitter"> </i>
+               <i class="fab fa-twitter size_news"> </i>
             </div>
             <div>
                <p class="twitter_post">
@@ -405,4 +414,7 @@
          <i class="fab fa-google-plus-g"></i>
       </div>
    </footer>
+   <script src="script.js"></script>
 </body>
+
+</html>
